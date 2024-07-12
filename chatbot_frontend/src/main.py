@@ -53,7 +53,7 @@ if prompt := st.chat_input("O que você quer saber?"):
 
     st.session_state.messages.append({"role": "user", "output": prompt})
 
-    data = {"text": prompt, "session_id": st.session_state.final_chain}
+    data = {"text": prompt, "session_id": "abc"}
 
     with st.spinner("Procurando por uma resposta..."):
         response = requests.post(CHATBOT_URL, json=data)
