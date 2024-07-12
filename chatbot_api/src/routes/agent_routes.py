@@ -33,7 +33,7 @@ async def agent_created(
     query: O2CQueryInput,
 ) -> O2CQueryOutput:
     agent = O2CAgentManager()
-    query_response = await agent.execute(query.text)
+    query_response = await agent.execute(query.text, query.session_id)
     query_response["intermediate_steps"] = [
         str(s) for s in query_response["intermediate_steps"]
     ]

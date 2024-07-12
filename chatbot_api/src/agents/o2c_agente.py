@@ -132,9 +132,9 @@ class O2CAgentManager:
             history_messages_key="chat_history",
         )
 
-    async def execute(self, query: str):
+    async def execute(self, query: str, session_id: str):
         return await self.o2c_rag_agent_executor.ainvoke(
             {
                 "input": query
-            }, config={"configurable": {"session_id": "abc123"}}
+            }, config={"configurable": {"session_id": session_id}}
         )
