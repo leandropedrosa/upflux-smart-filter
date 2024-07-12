@@ -1,5 +1,4 @@
 import os
-
 import requests
 import streamlit as st
 
@@ -31,7 +30,6 @@ with st.sidebar:
         "- Qual é o valor total das Ordens de Vendas em abril de 2023?"
     )
 
-
 st.title("<<-- _SYMPHONY_ -->>")
 st.title(':sunglasses: :blue[Chatbot Especialista em O2C] :sunglasses:')
 st.info(
@@ -47,7 +45,7 @@ for message in st.session_state.messages:
             st.markdown(message["output"])
 
         if "explanation" in message.keys():
-            with st.status("Como isso foi gerado", state="complete"):
+            with st.status("Como isso foi gerado?", state="complete"):
                 st.info(message["explanation"])
 
 if prompt := st.chat_input("O que você quer saber?"):
@@ -61,8 +59,8 @@ if prompt := st.chat_input("O que você quer saber?"):
         response = requests.post(CHATBOT_URL, json=data)
 
         if response.status_code == 200:
-            output_text = response.json()["output"]
-
+            output_text = response.json().get("output", "Nenhuma resposta disponível.")
+            explanation = response.json().get("explanation", "Nenhuma explicação disponível.")
         else:
             output_text = """Ocorreu um erro ao processar sua mensagem.
             Por favor, tente novamente ou reformule sua mensagem."""
