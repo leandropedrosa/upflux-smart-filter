@@ -67,7 +67,7 @@ if prompt := st.chat_input("O que você quer saber?"):
             explanation = output_text
 
     st.chat_message("assistant").markdown(output_text)
-    st.status("Como isso foi gerado?", state="complete").info(explanation)
+    st.status("Como isso foi gerado?", state="complete").info("Nenhuma explicação disponível.")
 
     st.session_state.messages.append(
         {
