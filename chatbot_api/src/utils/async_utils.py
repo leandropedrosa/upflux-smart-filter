@@ -1,6 +1,6 @@
 import asyncio
 import requests
-
+import os
 from langchain_community.document_loaders import WebBaseLoader, JSONLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
@@ -30,12 +30,14 @@ def read_json_from_url(url):
     return data
 
 
-def url_to_vector(url=None, json_path=None):
+def url_to_vector(url=None, file_name=None):
     if url:
         loader = WebBaseLoader(url)
-    elif json_path:
+    elif file_name:
+        base_path = os.path.dirname(__file__)
+        json_file_path = os.path.join(base_path, "..","data", file_name)
         loader = JSONLoader(jq_schema=".",
-                   file_path=json_path,
+                   file_path=json_file_path,
                    text_content=False)
 
     else: loader =None
@@ -45,6 +47,6 @@ def url_to_vector(url=None, json_path=None):
     text_splitter = RecursiveCharacterTextSplitter()
     documents = text_splitter.split_documents(docs)
     reviews_vector_db = Chroma.from_documents(
-        documents, OpenAIEmbeddings(), persist_directory="chroma_data/"
+        documents, OpenAIEmbeddings(openai_api_key=os.getenv('OPENAI_API_KEY')), persist_directory="chroma_data/"
     )
     return reviews_vector_db.as_retriever(k=10)

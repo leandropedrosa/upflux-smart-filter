@@ -1,0 +1,1232 @@
+{
+  "f_o2c_000": {},
+  "f_o2c_a000": {},
+  "f_o2c_t001": {
+    "payload_json": "",
+    "conditions": {
+      "change of analysis period": "deve ser um intervalo de datas"
+    }
+  },
+  "f_o2c_t005": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 6,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+    "f_o2c_t007": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 16
+  },
+  "f_o2c_t008": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 16
+  },
+  "f_o2c_t010": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 8,
+    "conditions": {
+    }
+  },
+  "f_o2c_t011": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 8,
+    "conditions": {
+    }
+  },
+  "f_o2c_t013": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 0
+  },
+  "f_o2c_t004": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 8
+  },
+  "f_o2c_t014": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 0
+  },
+  "f_o2c_t015": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 0
+  },
+  "f_o2c_t016": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 11
+  },
+  "f_o2c_t017": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 11
+  },
+  "f_o2c_t018": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 11
+  },
+  "f_o2c_t019": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 13,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+   "f_o2c_t020": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 13,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t021": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 13,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t022": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 3
+  },
+  "f_o2c_t023": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 3
+  },
+  "f_o2c_t024": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 3
+  },
+  "f_o2c_t025": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 5
+  },
+  "f_o2c_t026": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 5
+  },
+  "f_o2c_t027": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 5
+  },
+  "f_o2c_t028": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 14
+  },
+  "f_o2c_t029": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 14
+  },
+  "f_o2c_t030": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 14
+  },
+  "f_o2c_t031": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 10
+  },
+  "f_o2c_t032": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 10
+  },
+  "f_o2c_t033": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 10
+  },
+  "f_o2c_t034": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 17,
+    "conditions": {
+      "PAYMENTSTATUS": "atrasado"
+    }
+  },
+  "f_o2c_t035": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 17,
+    "conditions": {
+      "PAYMENTSTATUS": "atrasado"
+    }
+  },
+  "f_o2c_t036": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 17,
+    "conditions": {
+      "PAYMENTSTATUS": "atrasado"
+    }
+  },
+  "f_o2c_t037": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 1,
+    "conditions": {
+      "IMPACT": "impacto financeiro"
+    }
+  },
+    "f_o2c_t038": {
+    "payload_json": "1_payload_geral.json",
+    "component_number": 1,
+    "conditions": {
+      "PAYMENTSTATUS": "atrasado"
+    }
+  },
+  "f_o2c_t040": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t041": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t042": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t043": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 1,
+    "conditions": {
+    }
+  },
+  "f_o2c_t044": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 1,
+    "conditions": {
+    }
+  },
+  "f_o2c_t045": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 1,
+    "conditions": {
+    }
+  },
+  "f_o2c_t046": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t047": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t048": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t049": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 8,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t050": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 8,
+    "conditions": {
+      "KPI": "Order Cycle Time"
+    }
+  },
+  "f_o2c_t052": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 11,
+    "conditions": {
+      "MARKETINGCHANNEL": "Canal de Distribuição"
+    }
+  },
+  "f_o2c_t053": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 11,
+    "conditions": {
+      "MARKETINGCHANNEL": "Canal de Distribuição"
+    }
+  },
+  "f_o2c_t054": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 11,
+    "conditions": {
+      "MARKETINGCHANNEL": "Canal de Distribuição"
+    }
+  },
+  "f_o2c_t055": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 14,
+    "conditions": {
+      "OBJECT": "Grupo de cliente"
+    }
+  },
+  "f_o2c_t056": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 14,
+    "conditions": {
+    }
+  },
+  "f_o2c_t057": {
+    "payload_json": "2_payload_full_oct.json",
+    "component_number": 14,
+    "conditions": {
+    }
+  },
+  "f_o2c_t061": {
+    "payload_json": "2_payload_full_oct.json",
+    "components": [
+      {
+        "component_number": 11,
+        "conditions": {
+          "CATEGORY": "Canal de distribuição"
+        }
+      },
+      {
+        "component_number": 14,
+        "conditions": {
+          "CATEGORY": "Grupo de cliente"
+        }
+      },
+      {
+        "component_number": 7,
+        "conditions": {
+          "CATEGORY": "Organização de vendas"
+        }
+      },
+      {
+        "component_number": 2,
+        "conditions": {
+          "CATEGORY": "Setor atividade"
+        }
+      },
+      {
+        "component_number": 15,
+        "conditions": {
+          "CATEGORY": "Cliente"
+        }
+      }
+    ]
+  },
+  "f_o2c_t062": {
+    "payload_json": "2_payload_full_oct.json",
+    "components": [
+      {
+        "component_number": 11,
+        "conditions": {
+          "CATEGORY": "Canal de distribuição"
+        }
+      },
+      {
+        "component_number": 14,
+        "conditions": {
+          "CATEGORY": "Grupo de cliente"
+        }
+      },
+      {
+        "component_number": 7,
+        "conditions": {
+          "CATEGORY": "Organização de vendas"
+        }
+      },
+      {
+        "component_number": 2,
+        "conditions": {
+          "CATEGORY": "Setor atividade"
+        }
+      },
+      {
+        "component_number": 15,
+        "conditions": {
+          "CATEGORY": "Cliente"
+        }
+      }
+    ]
+  },
+  "f_o2c_t064": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t065": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t066": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t067": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 1,
+    "conditions": {
+      "FINANCIALDOCUMENT": "faturas"
+    }
+  },
+  "f_o2c_t068": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 1,
+    "conditions": {
+    }
+  },
+  "f_o2c_t069": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 1,
+    "conditions": {
+    }
+  },
+  "f_o2c_t070": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 10,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t071": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 10,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t072": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 10,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t073": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 15,
+    "conditions": {
+      "OBJECT": "itens"
+    }
+  },
+  "f_o2c_t074": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 15,
+    "conditions": {
+    }
+  },
+  "f_o2c_t075": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 15,
+    "conditions": {
+    }
+  },
+  "f_o2c_t076": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 8,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t077": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 8,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t078": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 8,
+    "conditions": {
+      "FINANCIALMETRIC": "DSO"
+    }
+  },
+  "f_o2c_t079": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 16,
+    "conditions": {
+      "STOCK": "itens"
+    }
+  },
+  "f_o2c_t080": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 16,
+    "conditions": {
+      "RECEIPTSTATUS": "recebimento atrasado"
+    }
+  },
+  "f_o2c_t082": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 7,
+    "conditions": {
+      "STOCK": "itens"
+    }
+  },
+  "f_o2c_t083": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 7,
+    "conditions": {
+      "STOCK": "itens"
+    }
+  },
+  "f_o2c_t084": {
+    "payload_json": "3_payload_pagamentos.json",
+    "component_number": 7,
+    "conditions": {
+      "STOCK": "itens"
+    }
+  },
+  "f_o2c_t085": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 4,
+    "conditions": {
+      "SALESORDER": "ordem de vendas"
+    }
+  },
+  "f_o2c_t086": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 4,
+    "conditions": {
+      "SALESORDER": "ordem de vendas"
+    }
+  },
+  "f_o2c_t087": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 4,
+    "conditions": {
+      "SALESORDER": "ordem de vendas"
+    }
+  },
+  "f_o2c_t088": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "horas"
+    }
+  },
+  "f_o2c_t089": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "horas"
+    }
+  },
+  "f_o2c_t090": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "horas"
+    }
+  },
+  "f_o2c_t091": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 11,
+    "conditions": {
+      "OBJECT": "impacto"
+    }
+  },
+  "f_o2c_t092": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 11,
+    "conditions": {
+      "OBJECT": "impacto"
+    }
+  },
+  "f_o2c_t093": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 11,
+    "conditions": {
+      "OBJECT": "impacto"
+    }
+  },
+  "f_o2c_t094": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 12,
+    "conditions": {
+      "ACTIVITY": "Alterar Data de Cobrança do Item de Entrega"
+    }
+  },
+  "f_o2c_t095": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 12,
+    "conditions": {
+      "ACTIVITY": "Alterar Data de Cobrança do Item de Entrega"
+    }
+  },
+  "f_o2c_t096": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 12,
+    "conditions": {
+      "ACTIVITY": "Alterar Data de Cobrança do Item de Entrega"
+    }
+  },
+  "f_o2c_t097": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 13,
+    "conditions": {
+      "PROCESSQUALITYMETRIC": "retrabalho"
+    }
+  },
+  "f_o2c_t098": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 13,
+    "conditions": {
+      "OBJECT": "impacto"
+    }
+  },
+  "f_o2c_t099": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 13,
+    "conditions": {
+      "OBJECT": "impacto"
+    }
+  },
+  "f_o2c_t100": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 10,
+    "conditions": {
+    }
+  },
+  "f_o2c_t101": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 8,
+    "conditions": {
+    }
+  },
+  "f_o2c_t102": {
+    "payload_json": "4_payload_perfectso.json",
+    "component_number": 2,
+    "conditions": {
+    }
+  },
+  "f_o2c_t103": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 0,
+    "conditions": {
+      "OBJECT": "itens"
+    }
+  },
+  "f_o2c_t104": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 0,
+    "conditions": {
+    }
+  },
+  "f_o2c_t105": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 0,
+    "conditions": {
+    }
+  },
+  "f_o2c_t106": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "envios"
+    }
+  },
+  "f_o2c_t107": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "envios"
+    }
+  },
+  "f_o2c_t108": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "envios"
+    }
+  },
+  "f_o2c_t109": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 2,
+    "conditions": {
+      "OBJECT": "OV"
+    }
+  },
+  "f_o2c_t110": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 2,
+    "conditions": {
+    }
+  },
+  "f_o2c_t111": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 2,
+    "conditions": {
+    }
+  },
+  "f_o2c_t112": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 4,
+    "conditions": {
+      "OBJECT": "status"
+    }
+  },
+  "f_o2c_t113": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t114": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 4,
+    "conditions": {
+    }
+  },
+  "f_o2c_t115": {
+    "payload_json": "5_payload_envios_answers.json",
+    "component_number": 5,
+    "conditions": {
+      "STOCK": "itens"
+    }
+  },
+  "f_o2c_t116": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 5,
+    "conditions": {
+      "OBJECT": "OV"
+    }
+  },
+  "f_o2c_t117": {
+    "payload_json": "5_payload_envios.json",
+    "component_number": 5,
+    "conditions": {
+      "OBJECT": "OV"
+    }
+  },
+  "f_o2c_t118": {
+    "payload_json": "5_payload_envios_answers.json",
+    "component_number": null,
+    "components": [
+      {
+        "component_number": 14,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "canal de distrbuição"
+        }
+      },
+      {
+        "component_number": 6,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "grupo clientes"
+        }
+      },
+      {
+        "component_number": 15,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "organização de vendas"
+        }
+      },
+      {
+        "component_number": 11,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "tipo de material"
+        }
+      },
+      {
+        "component_number": 16,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "clientes"
+        }
+      },
+      {
+        "component_number": 12,
+        "conditions": {
+          "STOCK": "itens",
+          "CATEGORIA": "transportadora"
+        }
+      }
+    ]
+  },
+  "f_o2c_t121": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 0,
+    "conditions": {
+      "OBJECT": "faturas"
+    }
+  },
+  "f_o2c_t122": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 0,
+    "conditions": {
+      "OBJECT": "faturas"
+    }
+  },
+  "f_o2c_t123": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 0,
+    "conditions": {
+      "OBJECT": "faturas"
+    }
+  },
+  "f_o2c_t124": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "a receber"
+    }
+  },
+  "f_o2c_t125": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "a receber"
+    }
+  },
+  "f_o2c_t126": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 1,
+    "conditions": {
+      "OBJECT": "a receber"
+    }
+  },
+  "f_o2c_t127": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 5,
+    "conditions": {
+      "OBJECT": "em atraso"
+    }
+  },
+  "f_o2c_t128": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 5,
+    "conditions": {
+      "OBJECT": "em atraso"
+    }
+  },
+  "f_o2c_t129": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 5,
+    "conditions": {
+      "OBJECT": "em atraso"
+    }
+  },
+  "f_o2c_t130": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 3,
+    "conditions": {
+      "FINANCIALDOCUMENT": "faturas"
+    }
+  },
+  "f_o2c_t131": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 3,
+    "conditions": {
+      "DATE": "janeiro de 2023"
+    }
+  },
+  "f_o2c_t132": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 3,
+    "conditions": {
+      "STARTDATE": "janeiro de 2023",
+      "ENDDATE": "abril de 2023"
+    }
+  },
+  "f_o2c_t133": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 8,
+    "conditions": {
+      "SALESORDER": "pedidos"
+    }
+  },
+  "f_o2c_t134": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 8,
+    "conditions": {
+      "SALESORDER": "pedidos"
+    }
+  },
+  "f_o2c_t135": {
+    "payload_json": "6_payload_contasreceber.json",
+    "component_number": 8,
+    "conditions": {
+      "SALESORDER": "pedidos"
+    }
+  },
+  "f_o2c_t136": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 2,
+    "conditions": {
+      "OBJECT": "itens"
+    }
+  },
+  "f_o2c_t137": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 2,
+    "conditions": {
+      "OBJECT": "itens"
+    }
+  },
+  "f_o2c_t138": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 2,
+    "conditions": {
+      "OBJECT": "itens"
+    }
+  },
+  "f_o2c_t139": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 4,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t140": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 4,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t141": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 4,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t142": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t143": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t144": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SYSTEM": "automação"
+    }
+  },
+  "f_o2c_t145": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SALESORDER": "ordens"
+    }
+  },
+  "f_o2c_t146": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SALESORDER": "ordens de vendas"
+    }
+  },
+  "f_o2c_t147": {
+    "payload_json": "8_payload_automacao.json",
+    "component_number": 5,
+    "conditions": {
+      "SALESORDER": "ordens de vendas"
+    }
+  },
+  "f_o2c_t148": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 3,
+    "conditions": {
+      "SALESORDER": "ordens"
+    }
+  },
+  "f_o2c_t149": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 3,
+    "conditions": {
+      "SALESORDER": "ordens"
+    }
+  },
+  "f_o2c_t150": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 3,
+    "conditions": {
+      "SALESORDER": "ordens"
+    }
+  },
+  "f_o2c_t151": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 1,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+  "f_o2c_t152": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 1,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+  "f_o2c_t153": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 1,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+    "f_o2c_t154": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 7,
+    "conditions": {
+      "SALESORDER": "itens das ordens"
+    }
+  },
+    "f_o2c_t155": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 7,
+    "conditions": {
+      "SALESORDER": "itens das ordens"
+    }
+  },
+    "f_o2c_t156": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 7,
+    "conditions": {
+      "SALESORDER": "itens das ordens"
+    }
+  },
+    "f_o2c_t160": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+    "f_o2c_t161": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+    "f_o2c_t162": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 10,
+    "conditions": {
+      "KPI": "receita"
+    }
+  },
+    "f_o2c_t163": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 11,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t164": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 11,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t165": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 11,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  }
+,
+    "f_o2c_t166": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t167": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t168": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t169": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t170": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t171": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 8,
+    "conditions": {
+      "FREQUENCY": "mensal"
+    }
+  },
+    "f_o2c_t172": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "SALESORDER": "itens de ordens de vendas"
+    }
+  },
+    "f_o2c_t173": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "SALESORDER": "itens de ordens de vendas"
+    }
+  },
+    "f_o2c_t174": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "SALESORDER": "itens de ordens de vendas"
+    }
+  },
+    "f_o2c_t175": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "ANALYSISSTATUS": "Distr. Industrial",
+      "CUSTOMERGROUP" : "Cancelados"
+    }
+  },
+    "f_o2c_t176": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "ANALYSISSTATUS": "Distr. Industrial",
+       "CUSTOMERGROUP" : "Cancelados"
+   }
+  },
+    "f_o2c_t177": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 9,
+    "conditions": {
+      "ANALYSISSTATUS": "Distr. Industrial",
+        "CUSTOMERGROUP" : "Cancelados"
+  }
+  },
+    "f_o2c_t178": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 13,
+    "conditions": {
+      "SALESORDER": "itens de ordens de vendas"
+    }
+  },
+    "f_o2c_t179": {
+    "payload_json": "7_payload_receita.json",
+    "component_number":13,
+    "conditions": {
+       "SALESORDER" : "itens de ordens de vendas"
+   }
+  },
+   "f_o2c_t180": {
+    "payload_json": "7_payload_receita.json",
+    "component_number": 13,
+    "conditions": {
+      "SALESORDER": "itens de ordens de vendas"
+    }
+  },
+    "f_o2c_t181": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 13,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t182": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 13,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t183": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 13,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t184": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t185": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t186": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "SALESORDER": "itens de ordens de vendas"
+      }
+    },
+    "f_o2c_t187": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "ANALYSISSTATUS": "Cancelados",
+        "MATERIALTYPE": "produto acabado",
+        "Cancelados": 2,
+        "Devolução": 3,
+        "Rejeição Item OV": 4
+      }
+    },
+    "f_o2c_t188": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "ANALYSISSTATUS": "Cancelados",
+        "MATERIALTYPE": "produto acabado",
+        "Cancelado": 2,
+        "Devolução": 3,
+        "Rejeição Item OV": 4
+      }
+    },
+    "f_o2c_t189": {
+      "payload_json": "7_payload_receita.json",
+      "component_number": 14,
+      "conditions": {
+        "SALESORDER": "Cancelados",
+        "MATERIALTYPE": "produto acabado",
+        "Cancelado": 2,
+        "Devolução": 3,
+        "Rejeição Item OV": 4
+      }
+    }
+}

@@ -1,0 +1,918 @@
+{
+  "KpiContext": {
+    "IsRefresh": false,
+    "Online": false,
+    "ProcessId": "6560b2d3776da7af117d6dec",
+    "Components": [
+      {
+        "Id": 0,
+        "Name": "Faturas em Aberto",
+        "Dimensions": null,
+        "Facts": [
+          {
+            "Attribute": {
+              "Name": "Chave",
+              "Type": "integer",
+              "Format": null,
+              "Unit": null
+            },
+            "Type": "Attribute",
+            "Operation": "countDistinct",
+            "FromActivity": null,
+            "ToActivity": null,
+            "ActiveTimeInMinutes": null,
+            "Expression": null
+          }
+        ],
+        "Sorts": null,
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "All",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": null,
+        "BusinessHoursTemplate": null
+      },
+      {
+        "Id": 1,
+        "Name": "Valor a Receber",
+        "Dimensions": null,
+        "Facts": [
+          {
+            "Attribute": {
+              "Name": "Valor Total Item Ordem Venda Moeda Local",
+              "Type": "double",
+              "Format": null,
+              "Unit": "A"
+            },
+            "Type": "Attribute",
+            "Operation": "sum",
+            "FromActivity": null,
+            "ToActivity": null,
+            "ActiveTimeInMinutes": null,
+            "Expression": null
+          }
+        ],
+        "Sorts": null,
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "All",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Criação Item da Ordem de Venda\"],\"IsAuditRule\":false,\"Operator\":\"selectonly\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"}]",
+        "BusinessHoursTemplate": null
+      },
+      {
+        "Id": 2,
+        "Name": "Backlog de Faturas a Receber",
+        "Expression": null,
+        "RowsLimit": {
+          "hasLimit": true,
+          "Limit": 200,
+          "ShowOthers": false
+        },
+        "Dimensions": [
+          {
+            "Name": "Chave",
+            "Type": "string",
+            "Format": null
+          },
+          {
+            "Name": "Cliente - Nome",
+            "Type": "string",
+            "Format": null
+          },
+          {
+            "Name": "Material - Descrição",
+            "Type": "string",
+            "Format": null
+          },
+          {
+            "Name": "Valor Total Item Ordem Venda Moeda Local",
+            "Type": "string",
+            "Format": null
+          },
+          {
+            "Name": "Valor Total Item Fatura Moeda Local",
+            "Type": "string",
+            "Format": null
+          }
+        ],
+        "Facts": [],
+        "Sorts": [],
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "All",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Criação da Fatura\"],\"IsAuditRule\":false,\"Operator\":\"selectonly\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"}]",
+        "BusinessHoursTemplate": null
+      },
+      {
+        "Id": 3,
+        "Name": "Faturas em Aberto (R$) por Mês de Vencimento",
+        "Expression": null,
+        "RowsLimit": {
+          "hasLimit": true,
+          "Limit": 200,
+          "ShowOthers": false
+        },
+        "Dimensions": [
+          {
+            "Name": "Data Fim Evento",
+            "Type": "date",
+            "Format": "monthYear"
+          }
+        ],
+        "Facts": [
+          {
+            "Attribute": {
+              "Name": "Chave",
+              "Type": "integer",
+              "Format": null,
+              "Unit": null
+            },
+            "Operation": "countDistinct",
+            "Type": "Attribute",
+            "FromActivity": null,
+            "ToActivity": null,
+            "ActiveTimeInMinutes": null,
+            "Expression": null,
+            "ProcessAbsolute": true
+          }
+        ],
+        "Sorts": [
+          {
+            "AttributeName": "Data Fim Evento",
+            "Direction": "Ascending"
+          }
+        ],
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "All",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Data de Vencimento\"],\"IsAuditRule\":false,\"Operator\":\"selectonly\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"}]",
+        "BusinessHoursTemplate": null
+      },
+      {
+        "Id": 4,
+        "Name": "",
+        "Expression": null,
+        "RowsLimit": null,
+        "Dimensions": null,
+        "Facts": null,
+        "Sorts": null,
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": null,
+        "MultipleAxes": null,
+        "Visualization": null,
+        "IgnoreComponentFilters": null,
+        "VariantDiscovery": null,
+        "FilterContext": null
+      },
+      {
+        "Id": 5,
+        "Name": "Valor em Atraso",
+        "Dimensions": null,
+        "Facts": [
+          {
+            "Attribute": {
+              "Name": "Valor Total Item Ordem Venda Moeda Local",
+              "Type": "double",
+              "Format": null,
+              "Unit": "A"
+            },
+            "Type": "Attribute",
+            "Operation": "sum",
+            "FromActivity": null,
+            "ToActivity": null,
+            "ActiveTimeInMinutes": null,
+            "Expression": null
+          }
+        ],
+        "Sorts": null,
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "OnlyFirst",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Data de Vencimento Ultrapassada\"],\"IsAuditRule\":false,\"Operator\":\"man\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"},{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Criação Item da Ordem de Venda\"],\"IsAuditRule\":false,\"Operator\":\"selectonly\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"}]",
+        "BusinessHoursTemplate": null
+      },
+      {
+        "Id": 6,
+        "Name": "",
+        "Expression": null,
+        "RowsLimit": null,
+        "Dimensions": [
+          {
+            "Name": "Cliente - Nome",
+            "Type": "string",
+            "Format": null
+          }
+        ],
+        "Facts": [],
+        "Sorts": [
+          {
+            "AttributeName": "Cliente - Nome",
+            "Direction": "Ascending"
+          }
+        ],
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": null,
+        "MultipleAxes": null,
+        "Visualization": null,
+        "IgnoreComponentFilters": null,
+        "VariantDiscovery": null,
+        "FilterContext": null
+      },
+      {
+        "Id": 7,
+        "Name": "",
+        "Expression": null,
+        "RowsLimit": null,
+        "Dimensions": [
+          {
+            "Name": "OV - Tipo Ordem Venda Descrição",
+            "Type": "string",
+            "Format": null
+          }
+        ],
+        "Facts": [],
+        "Sorts": [
+          {
+            "AttributeName": "OV - Tipo Ordem Venda Descrição",
+            "Direction": "Ascending"
+          }
+        ],
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": null,
+        "MultipleAxes": null,
+        "Visualization": null,
+        "IgnoreComponentFilters": null,
+        "VariantDiscovery": null,
+        "FilterContext": null
+      },
+      {
+        "Id": 8,
+        "Name": "Pedidos em Aberto (R$) por Cliente",
+        "Expression": null,
+        "RowsLimit": {
+          "hasLimit": true,
+          "Limit": 200,
+          "ShowOthers": false
+        },
+        "Dimensions": [
+          {
+            "Name": "Cliente - Nome",
+            "Type": "string",
+            "Format": null
+          }
+        ],
+        "Facts": [
+          {
+            "Attribute": {
+              "Name": "Valor Total Item Ordem Venda Moeda Local",
+              "Type": "double",
+              "Format": null,
+              "Unit": null
+            },
+            "Operation": "sum",
+            "Type": "Attribute",
+            "FromActivity": null,
+            "ToActivity": null,
+            "ActiveTimeInMinutes": null,
+            "Expression": null,
+            "ProcessAbsolute": false
+          }
+        ],
+        "Sorts": [
+          {
+            "AttributeName": "Valor Total Item Ordem Venda Moeda Local sum",
+            "Direction": "Descending"
+          }
+        ],
+        "Connection": null,
+        "Discovery": null,
+        "Histogram": null,
+        "Conformance": null,
+        "Statistical": null,
+        "HasAuditInfo": null,
+        "StatusList": null,
+        "OnlyLastAuditLogs": null,
+        "IgnoreNullValue": true,
+        "MultipleAxes": null,
+        "Visualization": "All",
+        "IgnoreComponentFilters": false,
+        "VariantDiscovery": null,
+        "FilterContext": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Criação Item da Ordem de Venda\"],\"IsAuditRule\":false,\"Operator\":\"selectonly\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"}]",
+        "BusinessHoursTemplate": null
+      }
+    ],
+    "DefaultAuditStatus": "Itens das Ordens de Venda",
+    "IsFilteredByLastAuditValues": false,
+    "StatusList": [
+      "Itens das Ordens de Venda",
+      "Remessa Criada",
+      "Mercadorias Enviadas ",
+      "Itens Faturados",
+      "Pendente Recebimento",
+      "Recebimento do Pagamento Confirmado"
+    ],
+    "StatisticConfiguration": {
+      "Groups": null,
+      "ControlIndicator": null,
+      "KaplanAnalysisStart": null,
+      "ControlGroup": null,
+      "CostAttribute": null,
+      "ThresholdMin": null,
+      "ThresholdMax": null,
+      "QalyAttribute": null,
+      "EffectivenessAttribute": null,
+      "Dimensions": []
+    },
+    "AnalysisId": "6560b2d3776da7af117d6e27",
+    "IsEditing": false,
+    "IsSaveCache": false,
+    "BaseFilterComposition": "[]",
+    "BoardId": "6560b2d3776da7af117d6e06"
+  },
+  "Filter": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Compensação Fatura\",\"Compensação da Fatura\",\"Recebimento do Pagamento\"],\"IsAuditRule\":false,\"Operator\":\"fbd\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"},{\"Id\":\"time\",\"Operator\":\"int\",\"Start\":\"2023-02-01T00:00:00.000Z\",\"End\":\"2023-04-30T23:59:59.000Z\",\"Level\":\"\",\"DateProxy\":{\"StartProperty\":null,\"CompleteProperty\":null}}]",
+  "parentHashFilter": "[{\"Id\":\"attr\",\"Attribute\":\"Evento\",\"Data\":[\"Compensação Fatura\",\"Compensação da Fatura\",\"Recebimento do Pagamento\"],\"IsAuditRule\":false,\"Operator\":\"fbd\",\"MinRange\":0,\"MaxRange\":0,\"Level\":\"\"},{\"Id\":\"time\",\"Operator\":\"int\",\"Start\":\"2023-02-01T00:00:00.000Z\",\"End\":\"2023-04-30T23:59:59.000Z\",\"Level\":\"\",\"DateProxy\":{\"StartProperty\":null,\"CompleteProperty\":null}}]",
+  "ProcessConfiguration": {
+    "CaseId": "Chave",
+    "Activity": "Evento",
+    "Cost": null,
+    "Quantity": null,
+    "Resource": null,
+    "GroupBy": null,
+    "Start": "Data Início Evento",
+    "Complete": "Data Fim Evento",
+    "DateFormat": "yyyy-MM-dd HH:mm:ss",
+    "Key": null,
+    "NumberDecimalSeparator": ",",
+    "IsGroupByView": false,
+    "IsSaveCacheAnalysis": false,
+    "IsParallelDiscovery": false,
+    "PredictionType": 0,
+    "DataReturnIdentifyUser": false,
+    "NumberDecimalRounding": 0,
+    "ActivitiesLevel": null,
+    "CostSumType": 0,
+    "TimeFormatPattern": "DECIMAL",
+    "CurrentActivityLevel": null,
+    "ExtraMappings": {},
+    "AttributesConfiguration": {
+      "_Chave": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Chave"
+      },
+      "_Cliente - Código": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Cliente - Código"
+      },
+      "_Cliente - Nome": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Cliente - Nome"
+      },
+      "_Cliente - País": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Cliente - País"
+      },
+      "_Cliente - Região": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Cliente - Região"
+      },
+      "_Data Fim Evento": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Data Fim Evento"
+      },
+      "_Data Início Evento": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Data Início Evento"
+      },
+      "_Data de Integração": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Data de Integração"
+      },
+      "_Data de Referência Vencimento": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Data de Referência Vencimento"
+      },
+      "_Data de Vencimento": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Data de Vencimento"
+      },
+      "_Empresa - Canal Distribuição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Canal Distribuição"
+      },
+      "_Empresa - Canal Distribuição Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Canal Distribuição Descrição"
+      },
+      "_Empresa - Centro": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Centro"
+      },
+      "_Empresa - Centro Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Centro Descrição"
+      },
+      "_Empresa - Código": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Código"
+      },
+      "_Empresa - Depósito": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Depósito"
+      },
+      "_Empresa - Depósito Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Depósito Descrição"
+      },
+      "_Empresa - Equipe Vendas": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Equipe Vendas"
+      },
+      "_Empresa - Equipe Vendas Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Equipe Vendas Descrição"
+      },
+      "_Empresa - Local Expedição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Local Expedição"
+      },
+      "_Empresa - Local Expedição Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Local Expedição Descrição"
+      },
+      "_Empresa - Nome": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Nome"
+      },
+      "_Empresa - Organização Vendas": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Organização Vendas"
+      },
+      "_Empresa - Organização Vendas Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Organização Vendas Descrição"
+      },
+      "_Empresa - Setor Atividade": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Setor Atividade"
+      },
+      "_Empresa - Setor Atividade Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Empresa - Setor Atividade Descrição"
+      },
+      "_Entrega - Código Transportadora": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Código Transportadora"
+      },
+      "_Entrega - Data de Entrega Solicitada": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Data de Entrega Solicitada"
+      },
+      "_Entrega - Data de Envio": {
+        "DataType": 3,
+        "DateTimePattern": "yyyy-MM-dd HH:mm:ss",
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Data de Envio"
+      },
+      "_Entrega - Nome Transportadora": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Nome Transportadora"
+      },
+      "_Entrega - Número da Remessa": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Número da Remessa"
+      },
+      "_Entrega Item - Parcial": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega Item - Parcial"
+      },
+      "_Entrega Ordem - Parcial": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega Ordem - Parcial"
+      },
+      "_Entrega - Status Envio": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Status Envio"
+      },
+      "_Entrega - Tempo Envio": {
+        "DataType": 1,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Tempo Envio"
+      },
+      "_Entrega - Tipo de Transporte": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Entrega - Tipo de Transporte"
+      },
+      "_Evento": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Evento"
+      },
+      "_Fator de Conversão da Moeda": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Fator de Conversão da Moeda"
+      },
+      "_Material - Código": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Código"
+      },
+      "_Material - Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Descrição"
+      },
+      "_Material - Grupo": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Grupo"
+      },
+      "_Material - Grupo Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Grupo Descrição"
+      },
+      "_Material - Quantidade": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Material - Quantidade"
+      },
+      "_Material - Tipo": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Tipo"
+      },
+      "_Material - Tipo Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Tipo Descrição"
+      },
+      "_Material - Unidade de Medida": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Material - Unidade de Medida"
+      },
+      "_Moeda": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Moeda"
+      },
+      "_OV - Categoria Item Documento Venda": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Categoria Item Documento Venda"
+      },
+      "_OV - Condições de Pagamento": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Condições de Pagamento"
+      },
+      "_OV - Condições de Pagamento Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Condições de Pagamento Descrição"
+      },
+      "_OV - Ctg Item Documento Venda Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Ctg Item Documento Venda Descrição"
+      },
+      "_OV - Código Ordem de Venda": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Código Ordem de Venda"
+      },
+      "_OV - Item Ordem de Venda": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Item Ordem de Venda"
+      },
+      "_OV - Motivo de Bloqueio da Ordem": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Motivo de Bloqueio da Ordem"
+      },
+      "_OV - Status Pedido": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Status Pedido"
+      },
+      "_OV - Tipo Ordem Venda": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Tipo Ordem Venda"
+      },
+      "_OV - Tipo Ordem Venda Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "OV - Tipo Ordem Venda Descrição"
+      },
+      "_Pagamento - Ano Fiscal": {
+        "DataType": 1,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Ano Fiscal"
+      },
+      "_Pagamento - Dias à Vencer": {
+        "DataType": 1,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Dias à Vencer"
+      },
+      "_Pagamento - Documento": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Documento"
+      },
+      "_Pagamento - Empresa": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Empresa"
+      },
+      "_Pagamento - Parcela": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Parcela"
+      },
+      "_Pagamento - Status Recebimento": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Status Recebimento"
+      },
+      "_Pagamento - Tempo Recebimento": {
+        "DataType": 1,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Pagamento - Tempo Recebimento"
+      },
+      "_Tipo Evento": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Tipo Evento"
+      },
+      "_Usuário - Nome": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Usuário - Nome"
+      },
+      "_Valor Item Ordem Venda Moeda": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Item Ordem Venda Moeda"
+      },
+      "_Valor Item Ordem Venda Moeda Local": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Item Ordem Venda Moeda Local"
+      },
+      "_Valor Total Item Fatura Moeda": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Total Item Fatura Moeda"
+      },
+      "_Valor Total Item Fatura Moeda Local": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Total Item Fatura Moeda Local"
+      },
+      "_Valor Total Item Ordem Venda Moeda Local": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Total Item Ordem Venda Moeda Local"
+      },
+      "_Valor Total Item Ordem Venda Moeda": {
+        "DataType": 2,
+        "DateTimePattern": null,
+        "DecimalSeparator": ".",
+        "Rename": "Valor Total Item Ordem Venda Moeda"
+      },
+      "_Faturamento - No Mês OV": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Faturamento - No Mês OV"
+      },
+      "_Cliente - Grupo Descrição": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Cliente - Grupo Descrição"
+      },
+      "_Campo - Valor Novo": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Campo - Valor Novo"
+      },
+      "_Campo - Valor Antigo": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Campo - Valor Antigo"
+      },
+      "_Evento Atual": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Evento Atual"
+      },
+      "_Faturamento - Número da Fatura": {
+        "DataType": 0,
+        "DateTimePattern": null,
+        "DecimalSeparator": null,
+        "Rename": "Faturamento - Número da Fatura"
+      }
+    },
+    "ActiveBusinessHours": "",
+    "BusinessHoursTemplates": {},
+    "GroupingMacroActivities": 0,
+    "IsSaveDataInMemoryCache": true,
+    "IsSaveDataInDataBase": true,
+    "IsBlockDataIntegration": false,
+    "UseMultiKanban": true,
+    "ConfigurationMetadata": null,
+    "ActiveTimeZone": "E. South America Standard Time",
+    "PreserveAuditor": false,
+    "SaveRuleLoggingInformation": false,
+    "IsBlockReprocessing": false,
+    "CurrentActivityView": "Evento",
+    "NodeOrderDiscovery": 1,
+    "Id": "64e73dfa3c72ee5f9481f029",
+    "CreatedAt": "2023-11-24T14:27:31.082Z",
+    "CreatedBy": "c46d0e9c-df96-4252-b100-1bce67a091ce",
+    "UpdatedAt": "2023-12-27T13:38:41.4483993Z",
+    "UpdatedBy": "4cbfbbad-b139-438d-9da4-ef205485f971"
+  },
+  "TemplateId": "default"
+}

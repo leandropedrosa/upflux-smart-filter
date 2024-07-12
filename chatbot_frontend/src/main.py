@@ -3,9 +3,9 @@ import os
 import requests
 import streamlit as st
 
-CHATBOT_URL = os.getenv(
-    "CHATBOT_URL", "http://chatbot_api:8000/o2c-rag-agent"
-)
+CHATBOT_URL = "http://chatbot_api:8000/agent/agent-local"
+#CHATBOT_URL = "http://localhost:8000/assistant/assistant-created"
+#CHATBOT_URL = "http://localhost:8000/assistant/assistant-existed"
 
 with st.sidebar:
     st.header("Sobre")
@@ -20,21 +20,22 @@ with st.sidebar:
     )
 
     st.header("Perguntas de Exemplo")
-    st.markdown("- Mostre a taxa de impacto de itens de ordens de vendas Indústria na Cancelados")
+    st.markdown("- Informe a quantidade total de ordens de vendas nos 60 últimos dias?")
     st.markdown(
-        """- Qual é a taxa de impacto de itens de ordens de vendas Distr. Industrial no canal de distribuição Cancelados em abril de 2023?"""
+        """- Mostre o montante total financeiro das Ordens de Vendas."""
     )
     st.markdown(
-        """- Informe qual é o impacto gerado pelo total de itens de ordens de vendas por organização de venda."""
+        """- Qual é o montante total financeiro das Ordens de Vendas. """
     )
     st.markdown(
-        "- Diga quanto é a porcentagem de itens de ordens de vendas afetada por organização de venda."
+        "- Qual é o valor total das Ordens de Vendas em abril de 2023?"
     )
 
 
-st.title("Chatbot Especialista em O2C")
+st.title("<<-- _SYMPHONY_ -->>")
+st.title(':sunglasses: :blue[Chatbot Especialista em O2C] :sunglasses:')
 st.info(
-    """Pergunte-me sobre a taxa de impacto de itens de ordens de vendas por organização de venda?"""
+    """Pergunte-me sobre o conteúdo do arquivo data/datatype_definitions.json"""
 )
 
 if "messages" not in st.session_state:
@@ -61,7 +62,6 @@ if prompt := st.chat_input("O que você quer saber?"):
 
         if response.status_code == 200:
             output_text = response.json()["output"]
-            explanation = response.json()["intermediate_steps"]
 
         else:
             output_text = """Ocorreu um erro ao processar sua mensagem.

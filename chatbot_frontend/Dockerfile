@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./src/ /app
 
-COPY ./pyproject.toml /code/pyproject.toml
-RUN pip install /code/.
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["sh", "entrypoint.sh"]

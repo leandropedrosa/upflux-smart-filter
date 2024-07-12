@@ -1,0 +1,176 @@
+[
+    {
+        "key": "type",
+        "description": "Define o tipo de análise ou dado",
+        "values": [
+            {
+                "name": "agci",
+                "description": "Análise de gestão do ciclo de pedido"
+            },
+            {
+                "name": "tempo",
+                "description": "Análise de tempo"
+            }
+        ]
+    },
+    {
+        "key": "context_name",
+        "description": "Nome do contexto",
+        "values": [
+            {
+                "name": "O2C",
+                "description": "Order to Cash"
+            }
+        ]
+    },
+    {
+        "key": "dashboard",
+        "description": "Representa a forma de visualização dos dados",
+        "values": [
+            {
+                "name": "Generic",
+                "description": "Dados a partir de perguntas mais genéricas e amplas"
+            },
+            {
+                "name": "Visão Geral",
+                "description": "Dados a partir de perguntas que remete ao todo"
+            },
+            {
+                "name": "Análise do Ciclo da Ordem de Venda",
+                "description": "Dados a partir de perguntas similares a Análise do Ciclo da Ordem de Venda"
+            },
+            {
+                "name": "Análise de Recebimento de pagamentos",
+                "description": "Dados a partir de perguntas similares a Análise de Recebimento de pagamentos"
+            },
+            {
+                "name": "Ordem de Venda Perfeita (Perfect SO)",
+                "description": "Dados a partir de perguntas similares a Ordem de Venda Perfeita (Perfect SO)"
+            },
+            {
+                "name": "Envios no prazo (on-time shipment)",
+                "description": "Dados a partir de perguntas similares a Envios no prazo (on-time shipment)"
+            },
+            {
+                "name": "Operação contas a receber",
+                "description": "Dados a partir de perguntas similares a Operação contas a receber"
+            },
+            {
+                "name": "Análise de automação",
+                "description": "Dados a partir de perguntas similares a Análise de automação"
+            },
+            {
+                "name": "Impacto na Receita",
+                "description": "Dados a partir de perguntas similares a Impacto na Receita"
+            }
+        ]
+    },
+    {
+        "key": "main_keywords",
+        "description": "Palavras-chave principais da pergunta feita pelo usuário",
+        "values": [
+            {
+                "name": "taxa",
+                "description": "Taxa de envio, conversão, etc."
+            },
+            {
+                "name": "envios atrasados",
+                "description": "Análise de envios com atraso"
+            },
+            {
+                "name": "itens de vendas",
+                "description": "Itens incluídos nas vendas"
+            },
+            {
+                "name": "Grupo de cliente",
+                "description": "Segmentação por grupo de clientes"
+            }
+        ]
+    },
+    {
+        "key": "user_requested_unit",
+        "description": "Unidade solicitada pelo usuário",
+        "values": [
+            {
+                "name": "porcentagem",
+                "description": "Representação em porcentagem"
+            },
+            {
+                "name": "tempo",
+                "description": "Representação em unidades de tempo"
+            }
+        ]
+    },
+    {
+        "key": "mode",
+        "description": "Modo de análise",
+        "values": [
+            {
+                "name": "casos interligados",
+                "description": "Análise de casos interligados"
+            },
+            {
+                "name": "casos contidos",
+                "description": "Casos Contidos"
+            },
+            {
+                "name": "casos que contém",
+                "description": "Casos que Contém"
+            },
+            {
+                "name": "casos que não contém",
+                "description": "Casos que não Contém"
+            },
+            {
+                "name": "limitar casos",
+                "description": "Limitar Casos"
+            },
+            {
+                "name": "selecionar somente",
+                "description": "Selecionar Somente"
+            },
+            {
+                "name": "maior ou igual a",
+                "description": "Maior ou igual a"
+            },
+            {
+                "name": "menor que",
+                "description": "Menor que"
+            },
+            {
+                "name": "menor ou igual a",
+                "description": "Menor ou igual a"
+            }
+        ]
+    },
+    {
+        "key": "DATE",
+        "description": "Intervalo de datas",
+        "values": [
+            {
+                "name": "01/01/2023-30/06/2023",
+                "description": "Período de análise de janeiro a junho de 2023"
+            }
+        ]
+    },
+    {
+        "key": "start_date",
+        "description": "Data de início do período",
+        "values": [
+            {
+                "name": "2023-01-01",
+                "description": "Data inicial para a análise"
+            }
+        ]
+    },
+    {
+        "key": "end_date",
+        "description": "Data de fim do período",
+        "values": [
+            {
+                "name": "2023-06-30",
+                "description": "Data final para a análise"
+            }
+        ]
+    }
+]

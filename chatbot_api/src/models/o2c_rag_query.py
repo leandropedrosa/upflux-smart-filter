@@ -8,4 +8,4 @@ class O2CQueryInput(BaseModel):
 class O2CQueryOutput(BaseModel):
     input: str
     output: str
-    intermediate_steps: list[str]
+    intermediate_steps: list[str] = None

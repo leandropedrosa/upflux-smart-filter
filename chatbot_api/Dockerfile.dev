@@ -1,0 +1,18 @@
+# chatbot_api/Dockerfile
+
+FROM python:3.11.5
+
+WORKDIR /app
+COPY ./src /app/src
+
+COPY requirements.txt /app/
+COPY entrypoint.sh /app/
+RUN pip install -r requirements.txt
+RUN pip install debugpy -t /tmp
+
+EXPOSE 8000
+CMD [ \
+  "sh", \
+  "-c", \
+  "python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 /app/src/main.py 0.0.0.0:8000 --nothreading --noreload -Xfrozen_modules=off" \
+]

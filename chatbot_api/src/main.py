@@ -1,39 +1,45 @@
 from fastapi import FastAPI
-from agents.o2c_agente import o2c_rag_agent_executor
-from models.o2c_rag_query import O2CQueryInput, O2CQueryOutput
-from utils.async_utils import async_retry
+import sys
+import os
+from dotenv import load_dotenv
 
-app = FastAPI(
-    title="Agent O2C Chatbot",
-    description="Endpoints for Agent O2C RAG chatbot",
-)
+import uvicorn
 
+app = FastAPI()
+def init_app():
 
-@async_retry(max_retries=10, delay=1)
-async def invoke_agent_with_retry(query: str):
-    """
-    Retry the agent if a tool fails to run. This can help when there
-    are intermittent connection issues to external APIs.
-    """
+    @app.get("/")
+    async def root():
+        return {"message": "Ok!"}
 
-    return await o2c_rag_agent_executor.ainvoke({"input": query})
+    from src.routes import assistant_routes, agent_routes
 
-
-@app.get("/")
-async def get_status():
-    return {"status": "running"}
+    app.include_router(agent_routes.router)
+    app.include_router(assistant_routes.router)
+    return app
 
 @app.get("/healthcheck")
-async def get_status():
-    return {"status": "ok"}
+async def root():
+    return {"message": "Ok!"}
 
-@app.post("/o2c-rag-agent")
-async def query_o2c_agent(
-    query: O2CQueryInput,
-) -> O2CQueryOutput:
-    query_response = await invoke_agent_with_retry(query.text)
-    query_response["intermediate_steps"] = [
-        str(s) for s in query_response["intermediate_steps"]
-    ]
 
-    return query_response
+if __name__ == '__main__':
+    # Adiciona o diretório atual ao sys.path
+    sys.path.append(os.getcwd())
+
+    # Imprime todos os caminhos no sys.path para verificação
+    print(sys.path)
+
+    # Define o caminho para o arquivo .env
+    dotenv_path = os.path.join(os.getcwd(), '.env')
+    print(f"Loading .env from: {dotenv_path}")
+
+    # Carrega o arquivo .env
+    load_dotenv(dotenv_path)
+
+    # Verifica se a variável de ambiente foi carregada corretamente
+    if not os.getenv("OPENAI_API_KEY"):
+        raise TypeError("'env' variable not found in .env file")
+
+    app = init_app()
+    uvicorn.run(app, host="0.0.0.0", port=8000)

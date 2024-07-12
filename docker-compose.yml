@@ -10,6 +10,8 @@ services:
       - PYTHONPATH=/app
     ports:
       - "8000:8000"
+    volumes:
+      - ./chatbot_api/src:/app/src
     networks:
       - chatbot_network
   chatbot_frontend:
@@ -21,6 +23,8 @@ services:
       - chatbot_api
     ports:
       - "8501:8501"
+    volumes:
+      - ./chatbot_frontend/src:/app/src
     networks:
       - chatbot_network
 networks:
